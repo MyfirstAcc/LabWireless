@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<analysis version="2">
+    <inputs>
+        <input pattern="/labW/nic/results/AckingMacWithApskScalarRadio-*.vec"/>
+        <input pattern="/labW/nic/results/AckingMacWithApskScalarRadio-*.sca"/>
+    </inputs>
+    <charts/>
+</analysis>
