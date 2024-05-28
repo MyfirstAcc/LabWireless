@@ -16,11 +16,11 @@ network TestNic
 {
     parameters:
         int numHosts;
-//        @display("bgb=450,450");
-//        @figure[title](type=label; pos=0,-1; anchor=sw; color=darkblue);
-//
-//        @figure[rcvdPkText](type=indicatorText; pos=380,20; anchor=w; font=,18; textFormat="packets received: %g"; initialValue=0);
-//        @statistic[packetReceived](source=host[0].app[0].pingTxSeq; record=figure(count); targetFigure=rcvdPkText);
+    //        @display("bgb=450,450");
+    //        @figure[title](type=label; pos=0,-1; anchor=sw; color=darkblue);
+    //
+    //        @figure[rcvdPkText](type=indicatorText; pos=380,20; anchor=w; font=,18; textFormat="packets received: %g"; initialValue=0);
+    //        @statistic[packetReceived](source=host[0].app[0].pingTxSeq; record=figure(count); targetFigure=rcvdPkText);
     submodules:
         visualizer: <default(firstAvailableOrEmpty("IntegratedCanvasVisualizer"))> like IIntegratedVisualizer if typename != "" {
             parameters:
@@ -36,6 +36,6 @@ network TestNic
         }
         host[numHosts]: WirelessHost {
             parameters:
-                @display("r=,,#707070;p=250,200");
+                @display("p=250,200;i=device/pocketpc");
         }
 }
